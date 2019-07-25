@@ -50,7 +50,7 @@ defmodule EctoSQL.MixProject do
       {:telemetry, "~> 0.4.0"},
 
       # Drivers
-      {:db_connection, "~> 2.0"},
+      {:db_connection, github: "elixir-ecto/db_connection", ref: "e3f3bcd", override: true},
       postgrex_dep(),
       mariaex_dep(),
       myxql_dep(),
