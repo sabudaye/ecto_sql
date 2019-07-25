@@ -95,7 +95,7 @@ defmodule EctoSQL.MixProject do
     if path = System.get_env("MYXQL_PATH") do
       {:myxql, path: path}
     else
-      {:myxql, "~> 0.2.0", optional: true}
+      {:myxql, github: "sabudaye/myxql", branch: "db_connection_ref", optional: true}
     end
   end
 
